@@ -1,0 +1,115 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <!-- VideoView for video playback -->
+
+    <!-- Title of the video -->
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoTitle"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Learn about Wounds, Cuts, and Scrapes"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/videoView" />
+
+    <!-- Action bar for like/unlike -->
+    <LinearLayout
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/videoTitle"
+        android:layout_marginTop="12dp"
+        android:gravity="start">
+
+        <!-- Thumbs Up Section -->
+        <LinearLayout
+            android:id="@+id/thumbsUpSection"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <!-- Thumbs Up Icon -->
+            <ImageView
+                android:id="@+id/thumbsUp"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:clickable="true"
+                android:contentDescription="Like"
+                android:padding="4dp"
+                android:src="@drawable/thumbs_up"
+                app:tint="@color/colorGrey" />
+
+            <!-- Like Count -->
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <!-- Space between thumbs up and thumbs down -->
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+
+        <!-- Thumbs Down Section -->
+        <LinearLayout
+            android:id="@+id/thumbsDownSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Thumbs Down Icon -->
+            <ImageView
+                android:id="@+id/thumbsDown"
+                android:layout_width="36dp"
+                android:layout_height="62dp"
+                android:clickable="true"
+                android:contentDescription="Unlike"
+                android:padding="4dp"
+                android:src="@drawable/thumbs_down"
+                app:tint="@color/colorGrey" />
+
+            <!-- Unlike Count -->
+            <TextView
+                android:id="@+id/unlikeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

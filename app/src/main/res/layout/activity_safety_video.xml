@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- Video View occupying the full screen -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+    <!-- Actions Layout (Like, Dislike) on the right -->
+    <LinearLayout
+        android:id="@+id/actionsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Thumbs Up -->
+        <ImageView
+            android:id="@+id/thumbsUp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/thumbs_up"
+            app:tint="@color/white"
+            android:contentDescription="Like" />
+
+        <!-- Like Count -->
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Thumbs Down -->
+        <ImageView
+            android:id="@+id/thumbsDown"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Dislike"
+            android:src="@drawable/thumbs_down"
+            app:tint="@color/white" />
+
+        <!-- Dislike Count -->
+        <TextView
+            android:id="@+id/unlikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

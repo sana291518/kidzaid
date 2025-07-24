@@ -1,0 +1,223 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Aid Topics"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="24dp"
+            android:textColor="#333333"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="4"
+            android:columnCount="2"
+            android:padding="8dp"
+            android:columnOrderPreserved="false">
+
+            <!-- Hygiene Rules -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/hygieneImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_hygiene"
+                    android:contentDescription="Hygiene Rules"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/hygieneRulesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hygiene Rules"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Safety Rules -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/safetyImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_safety"
+                    android:contentDescription="Safety Rules"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/safetyRulesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Safety Rules"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Nosebleeds -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/nosebleedsImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_nosebleed"
+                    android:contentDescription="Nosebleeds"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/nosebleedsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nosebleeds"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Burns -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/burnsImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_burn"
+                    android:contentDescription="Burns"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/burnsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Burns"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Sprains -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/sprainsImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_sprain"
+                    android:contentDescription="Sprains"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/sprainsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sprains"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Splinters -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/splintersImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_splinter"
+                    android:contentDescription="Splinters"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/splintersButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Splinters"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+            <!-- Insect Bites -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:layout_columnWeight="1">
+
+                <ImageView
+                    android:id="@+id/insectBitesImage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_insect_bite"
+                    android:contentDescription="Insect Bites"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    android:id="@+id/insectBitesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insect Bites"
+                    android:textSize="14sp"
+                    android:padding="8dp"/>
+            </LinearLayout>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

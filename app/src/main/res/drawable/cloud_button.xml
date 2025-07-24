@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#0C0C0C"/> <!-- Green color for the button -->
+    <corners android:radius="50dp"/>  <!-- Very rounded corners for a cloud shape -->
+    <padding android:left="16dp" android:right="16dp" android:top="8dp" android:bottom="8dp"/>
+    <stroke android:width="3dp" android:color="#0E0E0E"/> <!-- Yellow border -->
+</shape>

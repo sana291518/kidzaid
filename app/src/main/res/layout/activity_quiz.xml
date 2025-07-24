@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FADADD"
+    android:gravity="center"
+    tools:context=".QuizActivity">
+
+  <!-- Title of the quiz -->
+  <TextView
+      android:id="@+id/quizTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Identify the Injury!"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:textColor="@android:color/black"
+      android:layout_marginBottom="16dp" />
+
+  <!-- Image container -->
+  <FrameLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@android:color/white"
+      android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/injuryImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Injury Image" />
+  </FrameLayout>
+
+  <!-- Answer buttons -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp"
+      android:gravity="center">
+
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bruise"
+        android:textSize="18sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFB6C1" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cut"
+        android:textSize="18sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFB6C1" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrape"
+        android:textSize="18sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFB6C1" />
+
+  </LinearLayout>
+</LinearLayout>

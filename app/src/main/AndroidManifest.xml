@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kidzaidssj"
+        tools:targetApi="35">
+
+        <!-- ✅ Set MainActivity as the LAUNCHER -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Kidzaidssj.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CelebrationActivity"
+            android:exported="false" />
+
+        <!-- 🚀 Fainting, Choking, Heart Attack, Seizure Sections -->
+        <activity android:name=".TopicActivity" android:exported="false" />
+
+
+        <!-- 🚀 Age Groups -->
+        <activity android:name=".AgeGroup1Activity" android:exported="false" />
+        <activity android:name=".AgeGroup2Activity" android:exported="false" />
+        <activity android:name=".AgeGroup3Activity" android:exported="false" />
+
+        <!-- 🚀 Quiz & Video Activities -->
+        <activity android:name=".QuizActivity" android:exported="false" />
+        <activity android:name=".VideoActivity" android:exported="false" />
+
+        <!-- 🚀 First Aid Topics -->
+        <activity android:name=".InsectBitesActivity" android:exported="false" />
+        <activity android:name=".SplintersActivity" android:exported="false" />
+        <activity android:name=".BurnsActivity" android:exported="false" />
+        <activity android:name=".NosebleedsActivity" android:exported="false" />
+        <activity android:name=".SprainsActivity" android:exported="false" />
+        <activity android:name=".SafetyRulesActivity" android:exported="false" />
+        <activity android:name=".HygieneRulesActivity" android:exported="false" />
+
+        <!-- 🚀 Individual Quizzes -->
+        <activity android:name=".InsectQuizActivity" android:exported="false" />
+        <activity android:name=".SplintersQuizActivity" android:exported="false" />
+        <activity android:name=".SprainQuizActivity" android:exported="false" />
+        <activity android:name=".BurnsQuizActivity" android:exported="false" />
+        <activity android:name=".NosebleedsQuizActivity" android:exported="false" />
+        <activity android:name=".SafetyQuizActivity" android:exported="false" />
+        <activity android:name=".HygieneQuizActivity" android:exported="false" />
+
+        <!-- 🚀 Individual Video Activities -->
+        <activity android:name=".InsectVideoActivity" android:exported="false" />
+        <activity android:name=".SplintersVideoActivity" android:exported="false" />
+        <activity android:name=".SprainsVideoActivity" android:exported="false" />
+        <activity android:name=".BurnsVideoActivity" android:exported="false" />
+        <activity android:name=".NosebleedVideoActivity" android:exported="false" />
+        <activity android:name=".SafetyVideoActivity" android:exported="false" />
+        <activity android:name=".HygieneVideoActivity" android:exported="false" />
+
+        <activity android:name=".Question" android:exported="false" />
+
+    </application>
+</manifest>

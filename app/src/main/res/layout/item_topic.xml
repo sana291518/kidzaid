@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center_horizontal">
+
+    <!-- Topic Image -->
+    <ImageView
+        android:id="@+id/topicImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+    <!-- Topic Title -->
+    <TextView
+        android:id="@+id/topicTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <!-- Topic Pickup Line -->
+    <TextView
+        android:id="@+id/topicPickupLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:paddingTop="4dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
